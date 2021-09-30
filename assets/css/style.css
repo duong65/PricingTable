@@ -70,7 +70,21 @@ body {
     background: rgba(0,0,0,.4);
 }
 
-.grid-container .grid-item .grid-item-content {
+.grid-item-new {
+    background-image: url(../images/newmark.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    font-family: "Montserrat Bold";
+    font-size: 1.2rem;
+    width: 6.6rem;
+    top: -1.2rem;
+    left: -1.2rem;
+    line-height: 6.6rem;
+    color: #ffffff;
+}
+
+.grid-item-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -78,7 +92,7 @@ body {
     color: #ffffff;
 }
 
-.grid-container .grid-item .grid-item-price {
+.grid-item-price {
     position: absolute;
     background: #ffffff;
     clip-path: circle(50%);
@@ -86,10 +100,6 @@ body {
     transform: translate(-50%, -50%);
     height: calc(3/7 *100%);
     width: calc(1/3 *100%);
-}
-
-.grid-container .grid-item:nth-child(2) .grid-item-price {
-    background-color: #2c2e3d;
 }
 
 .grid-item-price--main {
@@ -101,6 +111,10 @@ body {
     font-size: 1.6rem;
     line-height: 4rem;
     color: #99a9b5;
+}
+
+.grid-item:nth-child(2) .grid-item-price {
+    background-color: #2c2e3d;
 }
 
 .grid-item-list {
@@ -154,4 +168,3 @@ body {
     color: #ffffff;
     cursor: pointer;
 }
-
