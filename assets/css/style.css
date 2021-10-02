@@ -2,6 +2,7 @@ html {
     font-size: 10px;
     width: 192em;
     height: 108em;
+    overflow-x: hidden;
     font-family: "Source Sans Pro Light";
 }
 
@@ -12,7 +13,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin: 25em 37.5em;
+    margin: 18em 37.5em;
 }
 
 .grid-item {
