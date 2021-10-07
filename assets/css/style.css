@@ -1,8 +1,6 @@
 html {
     font-size: 10px;
-    width: 192em;
-    height: 108em;
-    overflow-x: hidden;
+    width: 100%;
     font-family: "Source Sans Pro Light";
 }
 
@@ -27,40 +25,35 @@ body {
     font-family: "Montserrat UltraLight";
 }
 
-.grid-item:nth-child(1), .grid-item:nth-child(4), .grid-item:nth-child(7) {
+.grid-item:nth-child(3n-2) {
     margin-right: 3em;
 }
 
-.grid-item:nth-child(2), .grid-item:nth-child(5), .grid-item:nth-child(8) {
+.grid-item:nth-child(3n-1){
     margin: 0 1.5em;
 }
 
-.grid-item:nth-child(3), .grid-item:nth-child(6), .grid-item:nth-child(9) {
+.grid-item:nth-child(3n) {
     margin-left: 3em;
+}
+
+.grid-item:nth-child(n) {
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    position: relative;
 }
 
 .grid-item:nth-child(1) {
     background-image: url(../images/ocean.png);
-    background-position: center;
-    background-size: cover;
-    opacity: 0.7;
-    position: relative;
 }
 
 .grid-item:nth-child(2) {
     background-image: url(../images/mountain.png);
-    background-position: center;
-    background-size: cover;
-    opacity: 0.7;
-    position: relative;
 }
 
 .grid-item:nth-child(3) {
     background-image: url(../images/forest.png);
-    background-position: center;
-    background-size: cover;
-    opacity: 0.7;
-    position: relative;
 }
 
 .grid-item:nth-child(1):before, .grid-item:nth-child(2):before, .grid-item:nth-child(3):before {
@@ -108,10 +101,27 @@ body {
     font-size: 3.2em;
 }
 
+.grid-item-price--main_total:nth-child(1) {
+    color: #309df8;
+}
+
+.grid-item-price--main_total:nth-child(2) {
+    color: #d74498;
+}
+
+.grid-item-price--main_total:nth-child(3) {
+    color: #32ad1e;
+}
+
 .grid-item-price--title {
     font-size: 1.6em;
     line-height: 4em;
     color: #99a9b5;
+}
+
+.grid-item-content_sub {
+    font-size: 1.2rem;
+    color: #b6c6c9;
 }
 
 .grid-item:nth-child(2) .grid-item-price {
@@ -150,11 +160,10 @@ body {
     position: absolute;
     text-transform: uppercase;
     font-size: 1.9rem;
-    /* line-height: 5.4rem; */
     color: #2196f7;
     text-align: center;
     border: 0.1em solid #2196f7;
-    width: 17rem;
+    width: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
