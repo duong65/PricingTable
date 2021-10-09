@@ -44,7 +44,7 @@ body {
     position: relative;
 }
 
-.grid-item:nth-child(1) {
+.grid-item:first-child {
     background-image: url(../images/ocean.png);
 }
 
@@ -101,15 +101,15 @@ body {
     font-size: 3.2em;
 }
 
-.grid-item-price--main_total:nth-child(1) {
+.grid-item-price--main_total:first-child {
     color: #309df8;
 }
 
-.grid-item-price--main_total:nth-child(2) {
+.grid-item-price--main_total:nth-child(even) {
     color: #d74498;
 }
 
-.grid-item-price--main_total:nth-child(3) {
+.grid-item-price--main_total:last-child {
     color: #32ad1e;
 }
 
@@ -124,7 +124,7 @@ body {
     color: #b6c6c9;
 }
 
-.grid-item:nth-child(2) .grid-item-price {
+.grid-item:nth-child(even) .grid-item-price {
     background-color: #2c2e3d;
 }
 
